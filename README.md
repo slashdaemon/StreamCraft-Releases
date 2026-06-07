@@ -8,7 +8,7 @@ The source repo is private. This repo only holds release artifacts so non-collab
 
 - **Modrinth** (primary, auto-update via launcher): https://modrinth.com/mod/streamcraft-live
 - **CurseForge** (primary, CurseForge App): _link pending review_
-- **GitHub Releases** (this repo, manual install): see the [Releases](https://github.com/mindfulent/StreamCraft-Releases/releases) tab
+- **GitHub Releases** (this repo, manual install): see the [Releases](https://github.com/slashdaemon/StreamCraft-Releases/releases) tab
 
 ## What's in a release
 
