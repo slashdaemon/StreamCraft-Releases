@@ -1,25 +1,64 @@
 # StreamCraft Releases
 
-Public download mirror for [StreamCraft](https://modrinth.com/mod/streamcraft-live) — a real-time video conferencing mod for Minecraft (webcam, screen share, voice rendered on in-world blocks via LiveKit WebRTC).
+Public download mirror for **StreamCraft** — real-time **webcam, screen share, and voice** in
+Minecraft, rendered on in-world blocks via LiveKit WebRTC. Talk to nearby players, watch shared
+screens together, and stream your camera above your head.
 
-The source repo is private. This repo only holds release artifacts so non-collaborators can download builds directly.
+- 🌐 **Website:** https://streamcraft.live
+- 📦 **Modrinth:** https://modrinth.com/mod/streamcraft-live
+- 🟠 **CurseForge:** https://www.curseforge.com/minecraft/mc-mods/streamcraft-live
+- 📥 **GitHub Releases (this repo):** https://github.com/slashdaemon/StreamCraft-Releases/releases
 
-## Where to get StreamCraft
+The source repo is private; this repo mirrors the release artifacts so anyone can download builds
+directly without a launcher.
 
-- **Modrinth** (primary, auto-update via launcher): https://modrinth.com/mod/streamcraft-live
-- **CurseForge** (primary, CurseForge App): _link pending review_
-- **GitHub Releases** (this repo, manual install): see the [Releases](https://github.com/slashdaemon/StreamCraft-Releases/releases) tab
+## Where to get it
+
+| Channel | Best for |
+|---------|----------|
+| [Modrinth](https://modrinth.com/mod/streamcraft-live) | Prism / launcher install with auto-update (Fabric + Quilt + NeoForge) |
+| [CurseForge](https://www.curseforge.com/minecraft/mc-mods/streamcraft-live) | CurseForge App |
+| [GitHub Releases](https://github.com/slashdaemon/StreamCraft-Releases/releases) | Manual install / pinning a specific build |
+
+## Supported Minecraft versions
+
+- **Fabric** (also loads under **Quilt**): 1.20.1, 1.20.5, 1.21.1, 1.21.2, 1.21.4, 1.21.6, 1.21.9,
+  1.21.11, **26.1.x**, and a **26.2** Vulkan snapshot build.
+- **NeoForge:** 1.21.1, 1.21.2, 1.21.4, 1.21.6/1.21.8, 1.21.9/1.21.10, 1.21.11.
+
+> **Multiplayer only.** StreamCraft must be installed on **both the client and the dedicated
+> server**, and both must run the **same version**.
+
+## Which file do I download?
+
+Each release attaches one JAR per (Minecraft version × loader × platform). Pick the file matching
+your Minecraft version and loader, then your OS:
+
+| Your OS | File suffix |
+|---------|-------------|
+| **Windows** | *(no suffix)* — e.g. `streamcraft-<ver>+mc1.21.1.jar` |
+| **Linux (x86_64)** | `…-linux.jar` |
+| **Linux (ARM64)** | `…-linux-aarch64.jar` |
+| **macOS (Apple Silicon)** | `…-macos-arm64.jar` |
+| **macOS (Intel)** | `…-macos-x86_64.jar` |
+
+NeoForge users: pick the file with `-neoforge` in the name. The Windows variant is the default
+download (no platform suffix); the Mac/Linux variants bundle the platform-specific native capture
+stack.
 
 ## What's in a release
 
-Each release attaches up to 80 platform-specific JARs:
+**80 JARs** per release — 16 (Minecraft band × loader) combinations × 5 platforms:
 
-- 8 Fabric MC bands × 4 platforms (windows, linux, linux-aarch64 + macos)
-- 6 NeoForge MC bands × 4 platforms
-- 2 quarantined bands (MC 26.1, 26.2 Vulkan snapshot) × 4 platforms
+- 8 Fabric bands + 6 NeoForge bands + 2 quarantined bands (MC 26.1, 26.2 Vulkan snapshot)
+- × 5 platforms each: `windows`, `linux`, `linux-aarch64`, `macos-arm64`, `macos-x86_64`
 
-The `windows` variant has no platform suffix and is the default download. Mac/Linux variants carry the platform-specific native capture stack.
+## License & terms
 
-## License
+StreamCraft is proprietary. The mod is free and fully usable; an optional paid hosted service
+(see [streamcraft.live](https://streamcraft.live)) covers the real-time relay infrastructure. Use
+is governed by the published terms:
 
-StreamCraft is proprietary. See the in-mod license terms.
+- **Terms of Service:** https://streamcraft.live/terms
+- **Privacy Policy:** https://streamcraft.live/privacy
+- **Acceptable Use Policy:** https://streamcraft.live/acceptable-use
