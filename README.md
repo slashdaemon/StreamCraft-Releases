@@ -23,8 +23,9 @@ directly without a launcher.
 ## Supported Minecraft versions
 
 - **Fabric** (also loads under **Quilt**): 1.20.1, 1.20.5, 1.21.1, 1.21.2, 1.21.4, 1.21.6, 1.21.9,
-  1.21.11, **26.1.x**, and a **26.2** Vulkan snapshot build.
-- **NeoForge:** 1.21.1, 1.21.2, 1.21.4, 1.21.6/1.21.8, 1.21.9/1.21.10, 1.21.11.
+  1.21.11, **26.1.x**, and **26.2** (Vulkan line).
+- **NeoForge:** 1.20.6, 1.21.1, 1.21.2/1.21.3, 1.21.4, 1.21.6/1.21.8, 1.21.9/1.21.10, 1.21.11,
+  **26.1.x**, and **26.2** (beta — NeoForge 26.2 is still beta upstream).
 
 > **Multiplayer only.** StreamCraft must be installed on **both the client and the dedicated
 > server**, and both must run the **same version**.
@@ -48,10 +49,11 @@ stack.
 
 ## What's in a release
 
-**80 JARs** per release — 16 (Minecraft band × loader) combinations × 5 platforms:
+**96 JARs** per release — 19 (Minecraft band × loader) combinations × 5 platforms, plus one extra:
 
-- 8 Fabric bands + 6 NeoForge bands + 2 quarantined bands (MC 26.1, 26.2 Vulkan snapshot)
+- 10 Fabric bands (1.20.1 → 26.2) + 9 NeoForge bands (1.20.6 → 26.2)
 - × 5 platforms each: `windows`, `linux`, `linux-aarch64`, `macos-arm64`, `macos-x86_64`
+- plus an `-android-aarch64` variant of the 26.1 Fabric band (for the TBS Android launcher)
 
 ## License & terms
 
