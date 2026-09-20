@@ -41,17 +41,23 @@ directly without a launcher.
 Each release attaches one JAR per (Minecraft version × loader × platform). Pick the file matching
 your Minecraft version and loader, then your OS:
 
-| Your OS | File suffix |
-|---------|-------------|
-| **Windows** | *(no suffix)* — e.g. `streamcraft-<ver>+mc1.21.1.jar` |
-| **Linux (x86_64)** | `…-linux.jar` |
-| **Linux (ARM64)** | `…-linux-aarch64.jar` |
-| **macOS (Apple Silicon)** | `…-macos-arm64.jar` |
-| **macOS (Intel)** | `…-macos-x86_64.jar` |
+**Your OS is the first thing in the file name** (from v0.24.0 — older releases put it at the end):
 
-NeoForge users: pick the file with `-neoforge` in the name; on Forge 1.20.1, pick `-forge`. The
-Windows variant is the default download (no platform suffix); the Mac/Linux variants bundle the
-platform-specific native capture stack.
+| Your OS | File starts with |
+|---------|------------------|
+| **Windows** | `streamcraft-pc-…` — e.g. `streamcraft-pc-0.24.0+mc1.21.1.jar` |
+| **Linux (x86_64)** | `streamcraft-linux-x64-…` |
+| **Linux (ARM64)** | `streamcraft-linux-arm64-…` |
+| **macOS (Apple Silicon)** | `streamcraft-mac-arm64-…` |
+| **macOS (Intel)** | `streamcraft-mac-x64-…` |
+
+NeoForge users: pick the file with `-neoforge` in the name; on Forge 1.20.1, pick `-forge`.
+
+> **Mac and Linux players, read this.** Neither the Modrinth app nor the CurseForge app can pick a
+> file by operating system — both always install the *primary* file for a release, which is the
+> **Windows** (`pc`) build. If you install through either app, you will get the Windows jar and
+> StreamCraft will fail to start its capture stack. Download your OS's file from this page (or from
+> the version's file list on Modrinth) and drop it into your `mods` folder by hand.
 
 ## What's in a release
 
