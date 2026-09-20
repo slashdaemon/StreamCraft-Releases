@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/banner.png" alt="StreamCraft" width="820">
+</p>
+
 # StreamCraft Releases
 
 Public download mirror for **StreamCraft** — real-time **webcam, screen share, and voice** in
@@ -23,9 +27,11 @@ directly without a launcher.
 ## Supported Minecraft versions
 
 - **Fabric** (also loads under **Quilt**): 1.20.1, 1.20.5, 1.21.1, 1.21.2, 1.21.4, 1.21.6, 1.21.9,
-  1.21.11, **26.1.x**, and **26.2** (Vulkan line).
+  1.21.11, **26.1.x**, **26.2** (Vulkan line), and **26.3**.
 - **NeoForge:** 1.20.6, 1.21.1, 1.21.2/1.21.3, 1.21.4, 1.21.6/1.21.8, 1.21.9/1.21.10, 1.21.11,
-  **26.1.x**, and **26.2** (beta — NeoForge 26.2 is still beta upstream).
+  **26.1.x**, **26.2**, and **26.3**. The 26.2 and 26.3 NeoForge files are published as **beta**.
+- **Forge (MinecraftForge 47.x):** **1.20.1 only** — the Forge modpack LTS line. That same file also
+  loads on NeoForge 1.20.1.
 
 > **Multiplayer only.** StreamCraft must be installed on **both the client and the dedicated
 > server**, and both must run the **same version**.
@@ -43,17 +49,18 @@ your Minecraft version and loader, then your OS:
 | **macOS (Apple Silicon)** | `…-macos-arm64.jar` |
 | **macOS (Intel)** | `…-macos-x86_64.jar` |
 
-NeoForge users: pick the file with `-neoforge` in the name. The Windows variant is the default
-download (no platform suffix); the Mac/Linux variants bundle the platform-specific native capture
-stack.
+NeoForge users: pick the file with `-neoforge` in the name; on Forge 1.20.1, pick `-forge`. The
+Windows variant is the default download (no platform suffix); the Mac/Linux variants bundle the
+platform-specific native capture stack.
 
 ## What's in a release
 
-**96 JARs** per release — 19 (Minecraft band × loader) combinations × 5 platforms, plus one extra:
+**110 JARs** per release — 22 (Minecraft band × loader) combinations × 5 platforms, plus one extra:
 
-- 10 Fabric bands (1.20.1 → 26.2) + 9 NeoForge bands (1.20.6 → 26.2)
+- 11 Fabric bands (1.20.1 → 26.3) + 10 NeoForge bands (1.20.6 → 26.3) + 1 Forge band (1.20.1)
 - × 5 platforms each: `windows`, `linux`, `linux-aarch64`, `macos-arm64`, `macos-x86_64`
-- plus an `-android-aarch64` variant of the 26.1 Fabric band (for the TBS Android launcher)
+- plus an `-android-aarch64` variant of the 26.1 Fabric band (for the TBS Android launcher), so a
+  full release attaches 111 files
 
 ## License & terms
 
